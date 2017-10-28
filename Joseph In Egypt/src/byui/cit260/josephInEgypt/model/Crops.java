@@ -11,118 +11,119 @@ package byui.cit260.josephInEgypt.model;
  */
 
 //declare Crops' class
+
+
 public class Crops {
     
-    //declaring (or defining) variables for Crops class
-    
+    //data members
     private int year;
     private int population;
-    private int acres;
+    private int acresOwned;
+    private int sellLand;
+    private int landToBuy;
     private int cropYield;
-    private int whatInStore;
+    private int wheatInStore;
     private int numberWhoDied;
     private int newPeople;
     private int harvest;
     private int pharoahsShare;
     private int fed;
     private int planted;
-    
+
+
+    //empty (default) constructor
+    public void Crops() {}
+
     //declare getters and setters for the above
 
-    private void setYear(int year) {
-        this.year = year;
-        }
     private int getYear() {
         return year;
         }
-    
-    private void setPopulation(int population) {
-                if (population <= 0) {
-        System.out.println("everybody died, and you lose. Have a nice day??? To restart game, throw your computer across the room. Your computer will die too, and then it's really over.");
+    private void setYear(int _year) {
+        year = _year;
         }
-        else {
-        this.population = population;
-        }
-    }
-    
+
     private int getPopulation() {
         return population;
+        }
+    private void setPopulation(int _population) {
+        population = _population;
+        }
+    
+    private int getAcresOwned() {
+        return acresOwned;
+        }
+    private void setAcres(int _acresOwned) {
+        acresOwned = _acresOwned;
+        }
+
+    private int getSellLand() {
+        return sellLand;
+    }
+    private void setSellLand(int _sellLand) {
+        sellLand = _sellLand;
+    }
+    private int getLandToBuy() {
+        return landToBuy;
+    }
+    private void setLandToBuy(int _landToBuy) {
+        landToBuy = _landToBuy;
     }
     
-    private void setAcres(int acres) {
-        this.acres = acres;
-        }
-    private int getAcres() {
-        return acres;
-        }
-    
-    private void setCropYield(int cropYield) {
-        if (cropYield <= 100) {
-        System.out.println("Oh snap! Not a great year. No more going to the drive-thru at Burger Pharoah");
-        this.cropYield = cropYield;
-        }
-        else {
-        this.cropYield = cropYield;
-        }
-        }
     private int getCropYield() {
         return cropYield;
         }
-    
-    private void setWhatInStore(int whatInStore) {
-        this.whatInStore = whatInStore;
-        }
-    private int getWhatInStore() {
-        return whatInStore;
+    private void setCropYield(int _cropYield) {
+        cropYield = _cropYield;
         }
     
-    private void setNumberWhoDied(int numberWhoDied) {
-        if (numberWhoDied >= 5) {
-        System.out.println("You're new at this aren't you? Okay, so you're people? They need more than a spoonful of wheat per year, being greedy never kept anyone alive. Let's try this again, and see how you do next year");
-        this.numberWhoDied = numberWhoDied;
+    private int getWheatInStore() {
+        return wheatInStore;
         }
-        else {
-        this.numberWhoDied = numberWhoDied;
+    private void setWheatInStore(int _wheatInStore) {
+        wheatInStore = _wheatInStore;
         }
-        }
+    
     private int getNumberWhoDied() {
         return numberWhoDied;
         }
-    
-    private void setNewPeople(int newPeople) {
-        this.newPeople = newPeople;
+    private void setNumberWhoDied(int _numberWhoDied) {
+        numberWhoDied = _numberWhoDied;
         }
     
     private int getNewPeople() {
         return newPeople;
         }
-    
-    private void setHarvest(int harvest) {
-        this.harvest = harvest;
+    private void setNewPeople(int _newPeople) {
+        newPeople = _newPeople;
         }
+    
     private int getHarvest() {
         return harvest;
         }
-    
-    private void setPharoahsShare(int pharoahsShare) {
-        this.pharoahsShare = pharoahsShare;
-        System.out.println("You sure that was enough? Remember what happened to the Baker???");
+    private void setHarvest(int _harvest) {
+        harvest = _harvest;
         }
+    
     private int getPharoahsShare() {
         return pharoahsShare;
         }
-    
-    private void setFed(int fed) {
-        this.fed = fed;
+    private void setPharoahsShare(int _pharoahsShare) {
+        pharoahsShare = _pharoahsShare;
         }
+    
     private int getFed() {
         return fed;
         }
-
-    private void setPlanted(int planted) {
-        this.planted = planted;
+    private void setFed(int _fed) {
+        fed = _fed;
         }
-    private int setPlanted() {
+    
+        private int getPlanted() {
         return planted;
         }
+    private void setPlanted(int _planted) {
+        planted = _planted;
+        }
+
 }
