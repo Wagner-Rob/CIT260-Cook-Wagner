@@ -5,38 +5,33 @@
  */
 package byui.cit260.josephInEgypt.view;
 
+import java.util.Scanner;
+
 /**
- *
  * @author rbtwa
  */
-//Note:
-//Ran out of time on this one, I started on it Wednesday, and have put over 8
-//hours of coding into it, which has helped tremendously in expanding my Java
-//knowledge, however, since I need to get it turned in now, and I wasn't able to 
-//get all of the info I wanted to, I'm turning in what I have for now, and will
-//work on completing this next week if I have time to do it.
-//Also note: We're down a team member since Kathlyne has withdrawn from this course.
-//The reading took about 4-6 hours, and the other assignments about 1-2, so coding
-//isn't the only thing I've been working on this week, but the syntax feels like
-//it's starting to come together now.
+
 public class StartProgramView {
 
-    public static void displayStartProgramView() {
+    public void displayStartProgramView() 
+    {
     
-    boolean done = false; // set flag to not done
-    do {
-        //prompt for and get PlayersName
-        String playersName = this.getPlayersName();
-        
-        if(playersName.toUpperCase().equals("Q")) //user wants to quit
-            return; //exit the game
-        
-        //do requested action and display next view
-        done = this.doAction(playersName);
-    } while (!done);
+        boolean done = false; // set flag to not done
+        do
+        {
+            //prompt for and get PlayersName
+            String playersName = this.getPlayersName();
+
+            if(playersName.toUpperCase().equals("Q")) //user wants to quit
+                return; //exit the game
+
+            //do requested action and display next view
+            done = this.doAction(playersName);
+        }while (!done);
     }
     
-    private String getPlayersName() {
+    private String getPlayersName() 
+    {
         
         Scanner keyboard = new Scanner(System.in); //get infile for keyboard
         String value = ""; //value to be returned
@@ -55,7 +50,7 @@ public class StartProgramView {
             break; //end the loop
             }
         return value; //return the value entered
-        }
+    }
         /*
         WHILE valid value has not been entered
             DISPLAY promptMessage
@@ -72,8 +67,9 @@ public class StartProgramView {
         ENDWHILE
         RETURN name
         */
-    }
 
+    
+    
     private boolean doAction(String playersName) {
         System.out.println("n/ *** doAction() function called ***");
         return true;
@@ -81,11 +77,12 @@ public class StartProgramView {
     
     private String promptMessage;
     
-    public void startProgramView() {
-        this.promptMessage = "\nPlease enter your name: ";
-        this.displayBanner();
-        //display the banner when view is created
-    }
+    public void startProgramView() 
+        {
+            this.promptMessage = "\nPlease enter your name: ";
+            this.displayBanner();
+            //display the banner when view is created
+        }
         //clicked on lightbult in number line as instructed,
         //and then the tip, which created function below.
     private void displayBanner() {
@@ -103,5 +100,6 @@ public class StartProgramView {
       + "\n                                                               *"
       + "\n****************************************************************"   
        );
-}    
+}
+}
 

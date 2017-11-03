@@ -19,16 +19,19 @@ public class Crops {
     private int year;
     private int population;
     private int acresOwned;
+    private int acresToPlant;
     private int sellLand;
     private int landToBuy;
     private int cropYield;
     private int wheatInStore;
+    private int wheatFromSell;
     private int numberWhoDied;
     private int newPeople;
     private int harvest;
     private int pharoahsShare;
     private int fed;
     private int planted;
+    private int landPrice;
 
 
     //empty (default) constructor
@@ -36,93 +39,100 @@ public class Crops {
 
     //declare getters and setters for the above
 
-    private int getYear() {
+    public int getYear() {
         return year;
         }
-    private void setYear(int _year) {
+    public void setYear(int _year) {
         year = _year;
         }
 
-    private int getPopulation() {
+    public int getPopulation() {
         return population;
         }
-    private void setPopulation(int _population) {
+    public void setPopulation(int _population) {
         population = _population;
         }
     
-    private int getAcresOwned() {
+    public int getAcresOwned() {
         return acresOwned;
         }
-    private void setAcres(int _acresOwned) {
+    public void setAcresOwned(int _acresOwned) {
         acresOwned = _acresOwned;
         }
 
-    private int getSellLand() {
+    public int getAcresToPlant() {
+        return acresToPlant;
+    }
+    public void setAcresToPlant(int _acresToPlant) {
+        acresToPlant = _acresToPlant;
+    }
+    
+    public int getSellLand() {
         return sellLand;
     }
-    private void setSellLand(int _sellLand) {
+    public void setSellLand(int _sellLand) {
         sellLand = _sellLand;
     }
-    private int getLandToBuy() {
+    public int getLandToBuy() {
         return landToBuy;
     }
-    private void setLandToBuy(int _landToBuy) {
+    public void setLandToBuy(int _landToBuy) {
         landToBuy = _landToBuy;
     }
     
-    private int getCropYield() {
+    public int getCropYield() {
         return cropYield;
         }
-    private void setCropYield(int _cropYield) {
+    public void setCropYield(int _cropYield) {
         cropYield = _cropYield;
         }
     
-    private int getWheatInStore() {
+    public int getWheatInStore() {
         return wheatInStore;
         }
-    private void setWheatInStore(int _wheatInStore) {
+    public void setWheatInStore(int _wheatInStore) {
         wheatInStore = _wheatInStore;
         }
     
-    private int getNumberWhoDied() {
+    public int getNumberWhoDied() {
         return numberWhoDied;
         }
-    private void setNumberWhoDied(int _numberWhoDied) {
+    public void setNumberWhoDied(int _numberWhoDied) {
         numberWhoDied = _numberWhoDied;
         }
     
-    private int getNewPeople() {
+    public int getNewPeople() {
         return newPeople;
         }
-    private void setNewPeople(int _newPeople) {
+    public void setNewPeople(int _newPeople) {
         newPeople = _newPeople;
         }
     
-    private int getHarvest() {
+    public int getHarvest() {
         return harvest;
         }
-    private void setHarvest(int _harvest) {
+    public void setHarvest(int _harvest) {
         harvest = _harvest;
         }
     
-    private int getPharoahsShare() {
+    public int getPharoahsShare() {
         return pharoahsShare;
         }
-    private void setPharoahsShare(int _pharoahsShare) {
+    public void setPharoahsShare(int _pharoahsShare) {
         pharoahsShare = _pharoahsShare;
         }
     
-    private int getFed() {
+    public int getFed() {
         return fed;
         }
-    private void setFed(int _fed) {
+    public void setFed(int _fed) {
         fed = _fed;
         }
     
-        private int getPlanted() {
-        return planted;
+    public int getPlanted() {
+    return planted;
         }
-    private void setPlanted(int _planted) {
+    public void setPlanted(int _planted) {
         planted = _planted;
         }
 
